@@ -1,11 +1,48 @@
 // Compile This File! (Atom sass-autocompile plugin)
-@import "reset";
 @import "variables";
 @import "mixins";
-
+@import "navbar";
 
 // fonts
 //
 // font-family: 'Raleway', sans-serif;
 // font-family: 'Droid Sans', sans-serif;
 // font-family: 'Ubuntu', sans-serif;
+
+.navbar-default {
+  border: none;
+  background-color: $mainGrey;
+  border-radius: 0;
+  .navbar-brand {
+    color: invert($mainGrey);
+  }
+  .navbar-nav {
+    >li {
+      >a {
+        color:$navText;
+        &:hover, &:focus {
+          background-color: $engaged;
+          color: $mainGrey;
+        }
+      }
+    }
+    >.active {
+      >a{
+        background-color: $engaged;
+        &:hover, &:focus {
+          background-color: $engaged;
+          color: $mainGrey;
+        }
+      }
+    }
+  }
+  .navbar-collapse {
+  border: none;
+  }
+  .navbar-toggle {
+    border: none;
+    &:hover, &:focus{
+      background-color: $engaged;
+    }
+  }
+}
