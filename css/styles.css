@@ -1,3 +1,29 @@
+@keyframes shadowHighlight {
+  0% {
+    box-shadow: inset 0px 0px 0px 0px transparent;
+    color: #cccccc;
+  }
+  50% {
+    color: #F00;
+  }
+  100% {
+    box-shadow: inset 0px 0px 45px 0px #800000;
+    color: #F00;
+  }
+}
+
+.shadow-highlight {
+  animation-name: shadowHighlight;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+body {
+  background-color: #000;
+}
+
 .navbar-default {
   border: none;
   background-color: #333;
@@ -12,18 +38,19 @@
   color: #cccccc;
 }
 
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  background-color: rgba(153, 153, 153, 0.7);
-  color: #333;
+.navbar-default .navbar-nav > li > a:focus {
+  color: #F00;
 }
 
 .navbar-default .navbar-nav > .active > a {
-  background-color: rgba(153, 153, 153, 0.7);
+  background-color: transparent;
+  color: #F00;
+  box-shadow: inset 0px 0px 45px 0px #800000;
 }
 
-.navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  background-color: rgba(153, 153, 153, 0.7);
-  color: #333;
+.navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+  background-color: transparent;
+  color: #F00;
 }
 
 .navbar-default .navbar-collapse {

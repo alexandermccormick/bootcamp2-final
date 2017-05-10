@@ -2,6 +2,6 @@ $engaged: transparentize(lighten(#333, 40), .3);
 $navText: invert(#333);
 $mainGrey: #333;
 $darkRed: #800000;
-
+$activeLink: #F00;
 // inset shadow
-$redShadow: inset 0px 0px 75px 0px $darkRed;
+$redShadow: inset 0px 0px 45px 0px $darkRed;

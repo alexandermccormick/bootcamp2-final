@@ -1,0 +1,23 @@
+@keyframes shadowHighlight {
+  0% {
+    box-shadow: inset 0px 0px 0px 0px hsla(0, 0%, 0%, 0);
+    color: $navText;
+  }
+
+  50% {
+    color: $activeLink;
+  }
+
+  100% {
+    box-shadow: $redShadow;
+    color: $activeLink;
+  }
+}
+
+.shadow-highlight {
+  animation-name: shadowHighlight;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
