@@ -24,16 +24,12 @@
   }
 }
 
-body {
-  background-color: #000;
-  font-family: 'Ubuntu', sans-serif;
-}
-
 .navbar-default {
   border: none;
   background-color: #111;
   border-radius: 0;
-  height: 50px;
+  height: 10vh;
+  margin: 0;
 }
 
 .navbar-default .navbar-brand {
@@ -92,4 +88,13 @@ body {
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
   background-color: rgba(153, 153, 153, 0.7);
+}
+
+body {
+  background-color: #000;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.my-carousel {
+  height: 90vh;
 }
