@@ -1,22 +1,95 @@
-@import url("https://fonts.googleapis.com/css?family=Droid+Sans|Raleway|Ubuntu");
+@import url("https://fonts.googleapis.com/css?family=Jim+Nightshade|Ubuntu");
+.shadow-highlight {
+  animation-name: shadowHighlight;
+  animation-duration: 0.35s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shadowHighlight {
+  0% {
+    box-shadow: inset 0px 0px 0px 0px transparent;
+    box-shadow: 0px 0px 0px 0px transparent;
+    color: #cccccc;
+    border: 1px solid transparent;
+  }
+  50% {
+    color: #F00;
+  }
+  100% {
+    box-shadow: 0px 0px 10px 0px #8B0000, inset 0px 0px 20px 0px #8B0000;
+    color: #F00;
+    border: 1px solid #CE0000;
+  }
+}
+
 body {
-  font-family: 'Raleway', sans-serif;
-  background: #f8f9fb;
+  background-color: #000;
+  font-family: 'Ubuntu', sans-serif;
 }
 
-html, body, ul, ol, li, form, fieldset, legend {
+.navbar-default {
+  border: none;
+  background-color: #111;
+  border-radius: 0;
+  height: 50px;
+}
+
+.navbar-default .navbar-brand {
+  margin-top: 5px;
+  color: #F00;
+  font-family: 'Jim Nightshade', cursive;
+  text-shadow: 0 0 10px #F00;
+  font-size: 1.5em;
+}
+
+.navbar-default .navbar-nav > li > a {
+  border: 1px solid transparent;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5px;
+  color: #cccccc;
+  height: 40px;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+  color: #F00;
+}
+
+.navbar-default .navbar-nav > li > a p {
   margin: 0;
-  padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  margin-top: 0;
+.navbar-default .navbar-nav > .active {
+  pointer-events: none;
 }
 
-fieldset, img {
-  border: 0;
+.navbar-default .navbar-nav > .active > a {
+  background-color: transparent;
+  color: #F00;
 }
 
-li {
-  list-style: none;
+.navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+  background-color: transparent;
+  color: #F00;
+}
+
+.navbar-default .navbar-nav > .active > a p {
+  border-bottom: 2px solid #F00;
+  margin: 0;
+}
+
+.navbar-default .navbar-collapse {
+  border: none;
+}
+
+.navbar-default .navbar-toggle {
+  border: none;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: rgba(153, 153, 153, 0.7);
 }

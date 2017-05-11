@@ -37,3 +37,12 @@
   float: left;
   width: (100% / $boxes);
 }
+
+// center (x,y)
+@mixin flex-xy-center{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+// PROJECT SPECIFIC MIXINS
