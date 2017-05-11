@@ -25,19 +25,23 @@
 }
 
 .navbar-default {
-  border: none;
+  padding-top: 1vh;
   background-color: #111;
   border-radius: 0;
-  height: 10vh;
+  height: 7vh;
   margin: 0;
 }
 
 .navbar-default .navbar-brand {
-  margin-top: 5px;
   color: #F00;
   font-family: 'Jim Nightshade', cursive;
   text-shadow: 0 0 10px #F00;
   font-size: 1.5em;
+}
+
+.navbar-default .navbar-nav {
+  border: none;
+  height: inherit;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -46,7 +50,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 5px;
   color: #cccccc;
   height: 40px;
 }
@@ -82,19 +85,23 @@
   border: none;
 }
 
-.navbar-default .navbar-toggle {
-  border: none;
-}
-
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: rgba(153, 153, 153, 0.7);
-}
-
 body {
-  background-color: #000;
+  background-color: #111;
   font-family: 'Ubuntu', sans-serif;
 }
 
+body .wrapper {
+  height: 91vh;
+  width: 100vw;
+}
+
 .my-carousel {
-  height: 90vh;
+  padding: 0;
+  margin: 0;
+  height: 91vh;
+}
+
+.my-carousel .carousel-inner {
+  width: 100vw;
+  height: 91vh;
 }

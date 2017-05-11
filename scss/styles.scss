@@ -12,8 +12,12 @@
 
 // Remove!
 body{
-  background-color: #000;
+  background-color: $mainGrey;
   font-family: 'Ubuntu', sans-serif;
+  .wrapper {
+    height: 91vh;
+    width: 100vw;
+  }
 }
 
 // Variables
@@ -22,5 +26,11 @@ body{
 
 // Styles
 .my-carousel {
-  height: 90vh;
+  padding:0;
+  margin:0;
+  height: 91vh;
+  .carousel-inner{
+    width: 100vw;
+    height: 91vh;
+  }
 }

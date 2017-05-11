@@ -1,23 +1,25 @@
 .navbar-default {
-  border: none;
-  background-color: #111;
+  padding-top: 1vh;
+  background-color: $mainGrey;
   border-radius: 0;
-  height: 10vh;
+  height: 7vh;
   margin: 0;
   .navbar-brand {
-    margin-top: 5px;
+    // margin-top: 5px;
     color: $red;
     font-family: 'Jim Nightshade', cursive;
     text-shadow: 0 0 10px $red;
     font-size: 1.5em;
   }
   .navbar-nav {
+    border: none;
+    height: inherit;
     >li {
       >a {
         border: 1px solid $clear;
         border-radius: 2px;
         @include flex-xy-center;
-        margin-top: 5px;
+        // margin-top: 5px;
         color:$navText;
         height: 40px;
         &:focus {
@@ -49,9 +51,9 @@
   border: none;
   }
   .navbar-toggle {
-    border: none;
-    &:hover, &:focus{
-      background-color: $engaged;
-    }
+    // border: none;
+    // &:hover, &:focus{
+    //   background-color: $engaged;
+    // }
   }
 }
