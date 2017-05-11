@@ -46,3 +46,11 @@
 }
 
 // PROJECT SPECIFIC MIXINS
+
+// carousel image properties
+@mixin img-prop {
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height:91vh;
+}

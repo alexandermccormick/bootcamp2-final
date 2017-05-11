@@ -105,3 +105,27 @@ body .wrapper {
   width: 100vw;
   height: 91vh;
 }
+
+.my-carousel .carousel-inner .main-img1 {
+  background: url("../img/image10.png");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 91vh;
+}
+
+.my-carousel .carousel-inner .main-img2 {
+  background: url("../img/image11.png");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 91vh;
+}
+
+.my-carousel .carousel-inner .main-img3 {
+  background-image: url("../img/image12.png");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 91vh;
+}
