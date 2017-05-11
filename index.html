@@ -30,12 +30,12 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="navBar">
         <ul class="nav navbar-nav text-center">
-          <li class="active"><a href="#"><p>Home</p></a></li>
-          <li><a href="#"><p>My Work</p></a></li>
+          <li class="home-style active"><a id="homeBtn" href="#home"><p>Home</p></a></li>
+          <li class="mywork-style"><a id="myWorkBtn" href="#myWork"><p>My Work</p></a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right text-center">
-          <li><a href="#"><p>About</p></a></li>
-          <li><a href="#contact"><p>Contact</p></a></li>
+          <li class="about-style"><a id="aboutBtn" href="#about"><p>About</p></a></li>
+          <li class="contact-style"><a id="contactBtn" href="#contact"><p>Contact</p></a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -43,7 +43,7 @@
   <!-- END NAV -->
   <!-- HOME -->
   <!-- CAROUSEL -->
-  <div id="home" class="wrapper">
+  <div id="home" class="active-wrapper">
     <div id="myCarousel" class="my-carousel carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -86,6 +86,15 @@
     <!-- END CAROUSEL -->
   </div>
   <!-- END HOME -->
+  <!-- MY WORK -->
+  <div id="myWork" class="wrapper">
+    <div class="temp-my-work text-center">
+      <h1>HEY FRIEND!</h1>
+      <p>I'm sure you were hoping to see some REALLY exciting things in here. Fret not my dear friends, content is coming.</p>
+        <p>(complementary cookies are on the way)</p>
+    </div>
+  </div>
+  <!-- END MY WORK -->
 
 
 

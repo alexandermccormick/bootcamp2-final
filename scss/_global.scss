@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Jim+Nightshade|Ubuntu');
+body{
+  background-color: $mainGrey;
+  font-family: 'Ubuntu', sans-serif;
+  .wrapper {
+    height: 91vh;
+    width: 100vw;
+    display: none;
+  }
+  .active-wrapper{
+    height:91vh;
+    width:100vw;
+    display: block;
+  }
+}

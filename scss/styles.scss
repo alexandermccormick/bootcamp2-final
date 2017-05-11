@@ -1,48 +1,30 @@
 // Compile This File! (Atom sass-autocompile plugin)
-@import url('https://fonts.googleapis.com/css?family=Jim+Nightshade|Ubuntu');
 @import "variables";
 @import "mixins";
 @import "animations";
+@import "global";
 @import "navbar";
+@import "carousel";
+// @import "myWork";
 
 // fonts
 //
 // font-family: 'Jim Nightshade', cursive;
 // font-family: 'Ubuntu', sans-serif;
 
-// Remove!
-body{
-  background-color: $mainGrey;
-  font-family: 'Ubuntu', sans-serif;
-  .wrapper {
-    height: 91vh;
-    width: 100vw;
-  }
-}
-
-// Variables
+// Remove! Current testing area!
+// New Variables
 
 
 
-// Styles
-.my-carousel {
-  padding:0;
-  margin:0;
-  height: 91vh;
-  .carousel-inner{
-    width: 100vw;
-    height: 91vh;
-    .main-img1{
-      background: url('../img/image10.png');
-      @include img-prop;
-    }
-    .main-img2{
-      background: url('../img/image11.png');
-      @include img-prop;
-    }
-    .main-img3 {
-      background-image: url('../img/image12.png');
-      @include img-prop;
-    }
-  }
+// New Styles
+div.temp-my-work {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $navText;
+  font-family: 'Ubuntu', sans-serif;font-family: 'Ubuntu', sans-serif;
 }
