@@ -5,7 +5,9 @@
 @import "global";
 @import "navbar";
 @import "carousel";
-// @import "myWork";
+@import "myWork";
+@import "about";
+@import "contact";
 
 // fonts
 //
@@ -18,13 +20,3 @@
 
 
 // New Styles
-div.temp-my-work {
-  height: inherit;
-  width: inherit;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: $navText;
-  font-family: 'Ubuntu', sans-serif;font-family: 'Ubuntu', sans-serif;
-}

@@ -148,3 +148,31 @@ div.temp-my-work {
   font-family: 'Ubuntu', sans-serif;
   font-family: 'Ubuntu', sans-serif;
 }
+
+div.temp-about {
+  height: inherit;
+  width: inherit;
+  color: #cccccc;
+}
+
+div.temp-about .row {
+  width: inherit;
+}
+
+div.temp-about .row .subtitle {
+  margin-top: -0.75%;
+}
+
+div.temp-about .row .blurb {
+  width: 38%;
+  margin: auto;
+}
+
+.contact-container {
+  padding-top: 8%;
+}
+
+.contact-container .row {
+  width: inherit;
+  color: #cccccc;
+}

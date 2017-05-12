@@ -1,0 +1,15 @@
+div.temp-about {
+  height: inherit;
+  width: inherit;
+  color: $navText;
+  .row {
+    width: inherit;
+    .subtitle {
+      margin-top:-0.75%;
+    }
+    .blurb {
+      width: 38%;
+      margin:auto;
+    }
+  }
+}
