@@ -112,54 +112,64 @@
   <div id="contact" class="wrapper">
     <div class="container contact-container">
       <div class="row">
-        <div class="col-sm-6">
-          <div class="well well-sm">
-            <form>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <div class="input-group">
-                    <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
-                  </div>
-                  <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <select id="subject" name="subject" class="form-control" required="required">
-                      <option value="na" selected="">Choose One:</option>
-                      <option value="service">General Customer Service</option>
-                      <option value="suggestions">Suggestions</option>
-                      <option value="product">Product Support</option>
-                    </select>
-                  </div>
-                </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label for="name">Message</label>
-                      <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"placeholder="Message"></textarea>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">Send Message</button>
-                  </div>
-              </div>
-            </form>
-          </div>
+        <div class="col-xs-10 col-sm-6 col-md-4 form-container">
+          <h4>Let's get in touch!</h4>
+          <form class="contact-form" id="emailForm" method="POST">
+            <div class="form-group">
+              <label for="name">Full Name:</label>
+              <input type="text"
+                     class="form-control"
+                     id="name"
+                     name="name"
+                     required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address:</label>
+              <input type="text"
+                     class="form-control"
+                     id="email"
+                     name="_replyto"
+                     required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number:</label>
+              <input type="text"
+                     class="form-control"
+                     id="phone"
+                     name="phone">
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message:</label>
+              <textarea type="text"
+                        class="form-control"
+                        id="message"
+                        name="message"
+                        maxlength="150"
+                        required></textarea>
+              <p id="maxCharacters"></p>
+              <input type="hidden"
+                     name="_subject"
+                     value="Website contact" />
+              <input type="hidden"
+                     name="_gotcha"/>
+            </div>
+            <button class="btn btn-sm btn-primary"
+                    type="submit"
+                    id="submitButton">
+                Submit
+            </button>
+          </form>
         </div>
         <div class="col-md-4">
           <form>
             <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
             <address>
               <strong>Alexander McCormick</strong><br>
-              7 Van Ness<br>
+              700 Van Ness<br>
               Fresno, CA 93721<br>
               <abbr title="Phone">
                         P:</abbr>
-                    (123) 456-7890
+                    (559) 283-5427
             </address>
             <address>
               <strong>Alexander McCormick</strong><br>
@@ -177,5 +187,6 @@
   <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
   <script type="text/javascript" src="js/bootstrap-3.3.7.min.js"></script>
   <script type="text/javascript" src="js/animation.js"></script>
+  <script type="text/javascript" src="js/contact.js"></script>
 </body>
 </html>
