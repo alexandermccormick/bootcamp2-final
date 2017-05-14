@@ -1,0 +1,21 @@
+.my-carousel {
+  padding:0;
+  margin:0;
+  height: 91vh;
+  .carousel-inner{
+    width: 100vw;
+    height: 91vh;
+    .main-img1{
+      background: url('../img/image10.png');
+      @include img-prop;
+    }
+    .main-img2{
+      background: url('../img/image11.png');
+      @include img-prop;
+    }
+    .main-img3 {
+      background-image: url('../img/image12.png');
+      @include img-prop;
+    }
+  }
+}

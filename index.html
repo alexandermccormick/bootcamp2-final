@@ -13,41 +13,180 @@
   <title>Alexander McCormick</title>
 </head>
 <body>
-  <!-- HOME -->
-  <div id="home">
-    <!-- NAV -->
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBar" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">< Alexander | McCormick ></a>
-        </div>
+  <!-- NAV -->
+  <nav class="navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">< Alexander | McCormick ></a>
+      </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navBar">
-          <ul class="nav navbar-nav text-center">
-            <li class="active"><a href="#"><p>Home</p></a></li>
-            <li><a href="#"><p>My Work</p></a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right text-center">
-            <li><a href="#"><p>About</p></a></li>
-            <li><a href="#contact"><p>Contact</p></a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-    <!-- END NAV -->
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navBar">
+        <ul class="nav navbar-nav text-center">
+          <li class="home-style active"><a id="homeBtn" href="#home"><p>Home</p></a></li>
+          <li class="mywork-style"><a id="myWorkBtn" href="#myWork"><p>My Work</p></a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right text-center">
+          <li class="about-style"><a id="aboutBtn" href="#about"><p>About</p></a></li>
+          <li class="contact-style"><a id="contactBtn" href="#contact"><p>Contact</p></a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <!-- END NAV -->
+  <!-- HOME -->
+  <div id="home" class="active-wrapper">
+    <div id="myCarousel" class="my-carousel carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active main-img1">
+          <!-- <img class="img img-responsive test" src="img/computer.png" alt="Computer"> -->
+          <div class="carousel-caption">
+            ...
+          </div>
+        </div>
+        <div class="item main-img2">
+          <div class="carousel-caption">
+            ...
+          </div>
+        </div>
+        <div class="item main-img3">
+          <div class="carousel-caption">
+            ...
+          </div>
+        </div>
+        ...
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- END CAROUSEL -->
   </div>
   <!-- END HOME -->
+  <!-- MY WORK -->
+  <div id="myWork" class="wrapper">
+    <div class="temp-my-work text-center">
+      <h1>HEY FRIEND!</h1>
+      <p>I'm sure you were hoping to see some REALLY exciting things in here, but Fedex is having trouble finding my local address. <br>
+      Fret not my dear friends, content is coming.</p>
+        <p>(complementary cookies are provided instead)</p>
+    </div>
+  </div>
+  <!-- END MY WORK -->
+  <!-- ABOUT -->
+  <div id="about" class="wrapper">
+    <div class="temp-about">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h1 class="title">ALL ABOUT ALEX</h1>
+          <h3 class="subtitle">Words from another Alex</h3>
+          <p class="blurb">Born in Michigan (so yeah, sometimes he talks Canadian), and grew up in a small town with nothing to occupy it's residents other than "two trackin'" (his Michigander words, not mine) and ugly lifted trucks. So luckly for you, he decided to explore the workings of computers and technology in general.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END ABOUT -->
+  <!-- CONTACT -->
+  <div id="contact" class="wrapper">
+    <div class="container contact-container">
+      <div class="row">
+        <div class="col-xs-10 col-sm-6 col-md-4 form-container">
+          <h4>Let's get in touch!</h4>
+          <form class="contact-form" id="emailForm" method="POST">
+            <div class="form-group">
+              <label for="name">Full Name:</label>
+              <input type="text"
+                     class="form-control"
+                     id="name"
+                     name="name"
+                     required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address:</label>
+              <input type="text"
+                     class="form-control"
+                     id="email"
+                     name="_replyto"
+                     required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number:</label>
+              <input type="text"
+                     class="form-control"
+                     id="phone"
+                     name="phone">
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message:</label>
+              <textarea type="text"
+                        class="form-control"
+                        id="message"
+                        name="message"
+                        maxlength="150"
+                        required></textarea>
+              <p id="maxCharacters"></p>
+              <input type="hidden"
+                     name="_subject"
+                     value="Website contact" />
+              <input type="hidden"
+                     name="_gotcha"/>
+            </div>
+            <button class="btn btn-sm btn-primary"
+                    type="submit"
+                    id="submitButton">
+                Submit
+            </button>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <form>
+            <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
+            <address>
+              <strong>Alexander McCormick</strong><br>
+              700 Van Ness<br>
+              Fresno, CA 93721<br>
+              <abbr title="Phone">
+                        P:</abbr>
+                    (559) 283-5427
+            </address>
+            <address>
+              <strong>Alexander McCormick</strong><br>
+              <a href="mailto:#">livid.labs@gmail.com</a>
+            </address>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- END CONTACT -->
+
 
   <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
   <script type="text/javascript" src="js/bootstrap-3.3.7.min.js"></script>
   <script type="text/javascript" src="js/animation.js"></script>
+  <script type="text/javascript" src="js/contact.js"></script>
 </body>
 </html>

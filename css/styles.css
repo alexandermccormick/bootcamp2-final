@@ -25,23 +25,40 @@
 }
 
 body {
-  background-color: #000;
+  background-color: #111;
   font-family: 'Ubuntu', sans-serif;
 }
 
+body .wrapper {
+  height: 91vh;
+  width: 100vw;
+  display: none;
+}
+
+body .active-wrapper {
+  height: 91vh;
+  width: 100vw;
+  display: block;
+}
+
 .navbar-default {
-  border: none;
+  padding-top: 1vh;
   background-color: #111;
   border-radius: 0;
-  height: 50px;
+  height: 7vh;
+  margin: 0;
 }
 
 .navbar-default .navbar-brand {
-  margin-top: 5px;
   color: #F00;
   font-family: 'Jim Nightshade', cursive;
   text-shadow: 0 0 10px #F00;
   font-size: 1.5em;
+}
+
+.navbar-default .navbar-nav {
+  border: none;
+  height: inherit;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -50,7 +67,6 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 5px;
   color: #cccccc;
   height: 40px;
 }
@@ -86,10 +102,77 @@ body {
   border: none;
 }
 
-.navbar-default .navbar-toggle {
-  border: none;
+.my-carousel {
+  padding: 0;
+  margin: 0;
+  height: 91vh;
 }
 
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: rgba(153, 153, 153, 0.7);
+.my-carousel .carousel-inner {
+  width: 100vw;
+  height: 91vh;
+}
+
+.my-carousel .carousel-inner .main-img1 {
+  background: url("../img/image10.png");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 91vh;
+}
+
+.my-carousel .carousel-inner .main-img2 {
+  background: url("../img/image11.png");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 91vh;
+}
+
+.my-carousel .carousel-inner .main-img3 {
+  background-image: url("../img/image12.png");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 91vh;
+}
+
+div.temp-my-work {
+  height: inherit;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #cccccc;
+  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+div.temp-about {
+  height: inherit;
+  width: inherit;
+  color: #cccccc;
+}
+
+div.temp-about .row {
+  width: inherit;
+}
+
+div.temp-about .row .subtitle {
+  margin-top: -0.75%;
+}
+
+div.temp-about .row .blurb {
+  width: 38%;
+  margin: auto;
+}
+
+.contact-container {
+  padding-top: 8%;
+}
+
+.contact-container .row {
+  width: inherit;
+  color: #cccccc;
 }

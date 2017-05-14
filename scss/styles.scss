@@ -1,74 +1,22 @@
 // Compile This File! (Atom sass-autocompile plugin)
-@import url('https://fonts.googleapis.com/css?family=Jim+Nightshade|Ubuntu');
 @import "variables";
 @import "mixins";
 @import "animations";
+@import "global";
 @import "navbar";
+@import "carousel";
+@import "myWork";
+@import "about";
+@import "contact";
 
 // fonts
 //
 // font-family: 'Jim Nightshade', cursive;
 // font-family: 'Ubuntu', sans-serif;
 
-// Remove!
-body{
-  background-color: #000;
-  font-family: 'Ubuntu', sans-serif;
-}
+// Remove! Current testing area!
+// New Variables
 
-.navbar-default {
-  border: none;
-  background-color: #111;
-  border-radius: 0;
-  height: 50px;
-  .navbar-brand {
-    margin-top: 5px;
-    color: $red;
-    font-family: 'Jim Nightshade', cursive;
-    text-shadow: 0 0 10px $red;
-    font-size: 1.5em;
-  }
-  .navbar-nav {
-    >li {
-      >a {
-        border: 1px solid $clear;
-        border-radius: 2px;
-        @include flex-xy-center;
-        margin-top: 5px;
-        color:$navText;
-        height: 40px;
-        &:focus {
-          color: $red;
-        }
-        p {
-          margin:0;
-        }
-      }
-    }
-    >.active {
-      pointer-events: none;
-      >a{
-        background-color: transparent;
-        color: $red;
-        &:focus,
-        &:hover {
-          background-color: transparent;
-          color: $red;
-        }
-        p{
-          border-bottom: 2px solid $red;
-          margin: 0;
-        }
-      }
-    }
-  }
-  .navbar-collapse {
-  border: none;
-  }
-  .navbar-toggle {
-    border: none;
-    &:hover, &:focus{
-      background-color: $engaged;
-    }
-  }
-}
+
+
+// New Styles
