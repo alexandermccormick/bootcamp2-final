@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Jim+Nightshade|Ubuntu");
 .shadow-highlight {
   animation-name: shadowHighlight;
-  animation-duration: 0.35s;
+  animation-duration: 0.25s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
@@ -175,4 +175,23 @@ div.temp-about .row .blurb {
 .contact-container .row {
   width: inherit;
   color: #cccccc;
+}
+
+.form-container {
+  margin-top: 25px;
+  padding: 20px;
+}
+
+.form-container h4 {
+  margin-top: 0px;
+}
+
+.contact-form textarea {
+  max-width: 100%;
+  max-height: 100px;
+}
+
+.danger {
+  border-color: #F00;
+  box-shadow: 0 0 10px 3px #F00;
 }

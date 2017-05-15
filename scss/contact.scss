@@ -5,20 +5,20 @@
     color: $navText;
   }
 }
-.flex-container {
-  display: flex;
-}
-
-.align-center {
-  align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
-}
+// .flex-container {
+//   display: flex;
+// }
+//
+// .align-center {
+//   align-items: center;
+// }
+//
+// .justify-center {
+//   justify-content: center;
+// }
 
 .form-container {
-  background-color: #F2F2F2;
+  // background-color: #F2F2F2;
   margin-top: 25px;
   padding: 20px;
 }
@@ -34,4 +34,5 @@
 
 .danger {
   border-color: #F00;
+  box-shadow: 0 0 10px 3px #F00;
 }
